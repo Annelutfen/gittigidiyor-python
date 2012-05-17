@@ -1,0 +1,17 @@
+Pure Python interface for the GittiGidiyor RESTLIKE API.
+
+For linux;
+  - sudo aptitude install python-httplib2 python-simplejson python-setuptools
+
+For MAC OSX users;
+  - Download the latest httplib2 package from the link below;
+    * wget -c http://httplib2.googlecode.com/files/httplib2-0.6.0.zip
+    * unzip httplib2-0.6.0.zip
+    * cd httplib2-0.6.0
+    * sudo python setup.py install
+
+ - Download the latest simplejson library from the link below.
+   * wget -c http://pypi.python.org/packages/source/s/simplejson/simplejson-2.1.1.tar.gz#md5=0bbe3a2e5e4cac040013733aca159d89
+   * tar zxvf simplejson-2.1.1.tar.gz
+   * cd simplejson-2.1.1
+   * sudo python setup.py install

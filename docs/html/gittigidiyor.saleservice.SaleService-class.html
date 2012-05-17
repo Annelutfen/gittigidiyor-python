@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>gittigidiyor.saleservice.SaleService</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="gittigidiyor-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://dev.gittigidiyor.com">GittiGidiyor Python RESTLIKE API</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="gittigidiyor-module.html">Package&nbsp;gittigidiyor</a> ::
+        <a href="gittigidiyor.saleservice-module.html">Module&nbsp;saleservice</a> ::
+        Class&nbsp;SaleService
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="gittigidiyor.saleservice.SaleService-class.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS DESCRIPTION ==================== -->
+<h1 class="epydoc">Class SaleService</h1><p class="nomargin-top"><span class="codelink"><a href="gittigidiyor.saleservice-pysrc.html#SaleService">source&nbsp;code</a></span></p>
+<pre class="base-tree">
+                object --+        
+                         |        
+<a href="gittigidiyor.provider.ProviderInterface-class.html">provider.ProviderInterface</a> --+    
+                             |    
+               <a href="gittigidiyor.service.Service-class.html">service.Service</a> --+
+                                 |
+                                <strong class="uidshort">SaleService</strong>
+</pre>
+
+<hr />
+<p>This class represents the Sale Service of the GittiGidiyor RESTLIKE 
+  API.</p>
+
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Instance Methods</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-InstanceMethods"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gittigidiyor.saleservice.SaleService-class.html#__init__" class="summary-sig-name">__init__</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">auth</span>)</span><br />
+      Base Constructor.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gittigidiyor.saleservice-pysrc.html#SaleService.__init__">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gittigidiyor.saleservice.SaleService-class.html#getSales" class="summary-sig-name">getSales</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">sessionId</span>,
+        <span class="summary-sig-arg">startOffSet</span>,
+        <span class="summary-sig-arg">rowCount</span>,
+        <span class="summary-sig-arg">withData</span>,
+        <span class="summary-sig-arg">byStatus</span>,
+        <span class="summary-sig-arg">byUser</span>,
+        <span class="summary-sig-arg">outputCT</span>,
+        <span class="summary-sig-arg">orderBy</span>,
+        <span class="summary-sig-arg">orderType</span>,
+        <span class="summary-sig-arg">lang</span>)</span><br />
+      Performs the 'getSales' API method for the Sale Service API of 
+      Gittigidiyor.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gittigidiyor.saleservice-pysrc.html#SaleService.getSales">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gittigidiyor.saleservice.SaleService-class.html#getSale" class="summary-sig-name">getSale</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">sessionId</span>,
+        <span class="summary-sig-arg">saleCode</span>,
+        <span class="summary-sig-arg">outputCT</span>,
+        <span class="summary-sig-arg">lang</span>)</span><br />
+      Performs the 'getSale' API method for the Sale Service API of 
+      Gittigidiyor.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gittigidiyor.saleservice-pysrc.html#SaleService.getSale">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gittigidiyor.saleservice.SaleService-class.html#giveRateAndComment" class="summary-sig-name">giveRateAndComment</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">sessionId</span>,
+        <span class="summary-sig-arg">productId</span>,
+        <span class="summary-sig-arg">rate</span>,
+        <span class="summary-sig-arg">comment</span>,
+        <span class="summary-sig-arg">userType</span>,
+        <span class="summary-sig-arg">inputCT</span>,
+        <span class="summary-sig-arg">outputCT</span>,
+        <span class="summary-sig-arg">lang</span>)</span><br />
+      Performs the 'giveRateAndComment' API method for the Sale Service API
+      of Gittigidiyor.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gittigidiyor.saleservice-pysrc.html#SaleService.giveRateAndComment">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="gittigidiyor.saleservice.SaleService-class.html#replySaleComment" class="summary-sig-name">replySaleComment</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">sessionId</span>,
+        <span class="summary-sig-arg">productId</span>,
+        <span class="summary-sig-arg">comment</span>,
+        <span class="summary-sig-arg">userType</span>,
+        <span class="summary-sig-arg">inputCT</span>,
+        <span class="summary-sig-arg">outputCT</span>,
+        <span class="summary-sig-arg">lang</span>)</span><br />
+      Performs the 'replySaleComment' API method for the Sale Service API 
+      of Gittigidiyor.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="gittigidiyor.saleservice-pysrc.html#SaleService.replySaleComment">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="gittigidiyor.service.Service-class.html">service.Service</a></code></b>:
+      <code><a href="gittigidiyor.service.Service-class.html#createTimeStamp">createTimeStamp</a></code>,
+      <code><a href="gittigidiyor.service.Service-class.html#makeRequest">makeRequest</a></code>,
+      <code><a href="gittigidiyor.service.Service-class.html#signature">signature</a></code>
+      </p>
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__delattr__</code>,
+      <code>__format__</code>,
+      <code>__getattribute__</code>,
+      <code>__hash__</code>,
+      <code>__new__</code>,
+      <code>__reduce__</code>,
+      <code>__reduce_ex__</code>,
+      <code>__repr__</code>,
+      <code>__setattr__</code>,
+      <code>__sizeof__</code>,
+      <code>__str__</code>,
+      <code>__subclasshook__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== INSTANCE VARIABLES ==================== -->
+<a name="section-InstanceVariables"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Instance Variables</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-InstanceVariables"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="gittigidiyor.service.Service-class.html">service.Service</a></code></b>:
+      <code><a href="gittigidiyor.service.Service-class.html#serviceName">serviceName</a></code>
+      </p>
+    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="gittigidiyor.provider.ProviderInterface-class.html">provider.ProviderInterface</a></code></b>:
+      <code><a href="gittigidiyor.provider.ProviderInterface-class.html#auth">auth</a></code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== PROPERTIES ==================== -->
+<a name="section-Properties"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Properties</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-Properties"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__class__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== METHOD DETAILS ==================== -->
+<a name="section-MethodDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Method Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-MethodDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="__init__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__init__</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">auth</span>)</span>
+    <br /><em class="fname">(Constructor)</em>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gittigidiyor.saleservice-pysrc.html#SaleService.__init__">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Base Constructor.</p>
+  <p>auth = Auth(username = 'testuser', password = 'testpassword', key = 
+  'apikey', secret = 'apisecret')</p>
+  <p>saleApi = SaleService(auth)</p>
+  <dl class="fields">
+    <dt>Overrides:
+        object.__init__
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="getSales"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">getSales</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">sessionId</span>,
+        <span class="sig-arg">startOffSet</span>,
+        <span class="sig-arg">rowCount</span>,
+        <span class="sig-arg">withData</span>,
+        <span class="sig-arg">byStatus</span>,
+        <span class="sig-arg">byUser</span>,
+        <span class="sig-arg">outputCT</span>,
+        <span class="sig-arg">orderBy</span>,
+        <span class="sig-arg">orderType</span>,
+        <span class="sig-arg">lang</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gittigidiyor.saleservice-pysrc.html#SaleService.getSales">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Performs the 'getSales' API method for the Sale Service API of 
+  Gittigidiyor.</p>
+  <p>sessionId: session key fo the logged in user.</p>
+  <p>startOffSet: is the offset in which city we start counting from.</p>
+  <p>rowCount: is the number of how many cities will be fetched.</p>
+  <p>withData: if True, the sale details are also fetched.</p>
+  <p>byStatus: 
+  http://dev.gittigidiyor.com/metotlar/getSales-SaleService-rlws-community.</p>
+  <p>byUser: 
+  http://dev.gittigidiyor.com/metotlar/getSales-SaleService-rlws-community.</p>
+  <p>outputCT: output content type (xml or json)</p>
+  <p>orderBy: 
+  http://dev.gittigidiyor.com/metotlar/getSales-SaleService-rlws-community</p>
+  <p>orderType: 
+  http://dev.gittigidiyor.com/metotlar/getSales-SaleService-rlws-community</p>
+  <p>lang: 'tr' or 'en'</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="getSale"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">getSale</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">sessionId</span>,
+        <span class="sig-arg">saleCode</span>,
+        <span class="sig-arg">outputCT</span>,
+        <span class="sig-arg">lang</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gittigidiyor.saleservice-pysrc.html#SaleService.getSale">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Performs the 'getSale' API method for the Sale Service API of 
+  Gittigidiyor.</p>
+  <p>sessionId: session key fo the logged in user.</p>
+  <p>saleCode: sale code.</p>
+  <p>outputCT: output content type (xml or json)</p>
+  <p>lang: 'tr' or 'en'</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="giveRateAndComment"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">giveRateAndComment</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">sessionId</span>,
+        <span class="sig-arg">productId</span>,
+        <span class="sig-arg">rate</span>,
+        <span class="sig-arg">comment</span>,
+        <span class="sig-arg">userType</span>,
+        <span class="sig-arg">inputCT</span>,
+        <span class="sig-arg">outputCT</span>,
+        <span class="sig-arg">lang</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gittigidiyor.saleservice-pysrc.html#SaleService.giveRateAndComment">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Performs the 'giveRateAndComment' API method for the Sale Service API 
+  of Gittigidiyor.</p>
+  <p>sessionId: session key fo the logged in user.</p>
+  <p>productId: product unique id.</p>
+  <p>rate: rate for the product. domain: [1,5] comment: comment for the 
+  given sale.. userType: Determines the user. Can be 'A' for all, 'S' for 
+  seller, 'B' for buyer or 'N' for none.</p>
+  <p>inputCT: input content type (xml or json)</p>
+  <p>outputCT: output content type (xml or json)</p>
+  <p>lang: 'tr' or 'en'</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="replySaleComment"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">replySaleComment</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">sessionId</span>,
+        <span class="sig-arg">productId</span>,
+        <span class="sig-arg">comment</span>,
+        <span class="sig-arg">userType</span>,
+        <span class="sig-arg">inputCT</span>,
+        <span class="sig-arg">outputCT</span>,
+        <span class="sig-arg">lang</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="gittigidiyor.saleservice-pysrc.html#SaleService.replySaleComment">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Performs the 'replySaleComment' API method for the Sale Service API of
+  Gittigidiyor.</p>
+  <p>sessionId: session key fo the logged in user.</p>
+  <p>productId: product unique id.</p>
+  <p>comment: comment for the given sale.. userType: Determines the user. 
+  Can be 'A' for all, 'S' for seller, 'B' for buyer or 'N' for none.</p>
+  <p>inputCT: input content type (xml or json)</p>
+  <p>outputCT: output content type (xml or json)</p>
+  <p>lang: 'tr' or 'en'</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="gittigidiyor-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://dev.gittigidiyor.com">GittiGidiyor Python RESTLIKE API</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Mon Jul  5 19:36:29 2010
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

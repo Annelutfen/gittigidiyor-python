@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>gittigidiyor.xmlbuilder</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="gittigidiyor-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://dev.gittigidiyor.com">GittiGidiyor Python RESTLIKE API</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="gittigidiyor-module.html">Package&nbsp;gittigidiyor</a> ::
+        Module&nbsp;xmlbuilder
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="gittigidiyor.xmlbuilder-pysrc.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<h1 class="epydoc">Source Code for <a href="gittigidiyor.xmlbuilder-module.html">Module gittigidiyor.xmlbuilder</a></h1>
+<pre class="py-src">
+<a name="L1"></a><tt class="py-lineno">  1</tt>  <tt class="py-line"><tt class="py-comment"># -*- coding: utf-8 -*-</tt> </tt>
+<a name="L2"></a><tt class="py-lineno">  2</tt>  <tt class="py-line"><tt class="py-comment">#####################################################################</tt> </tt>
+<a name="L3"></a><tt class="py-lineno">  3</tt>  <tt class="py-line"><tt class="py-comment"># Copyright (c) &lt;2010&gt; &lt;GittiGidiyor&gt;                               #</tt> </tt>
+<a name="L4"></a><tt class="py-lineno">  4</tt>  <tt class="py-line"><tt class="py-comment">#                                                                   #</tt> </tt>
+<a name="L5"></a><tt class="py-lineno">  5</tt>  <tt class="py-line"><tt class="py-comment"># Permission is hereby granted, free of charge, to any person       #</tt> </tt>
+<a name="L6"></a><tt class="py-lineno">  6</tt>  <tt class="py-line"><tt class="py-comment"># obtaining a copy of this software and associated documentation    #</tt> </tt>
+<a name="L7"></a><tt class="py-lineno">  7</tt>  <tt class="py-line"><tt class="py-comment"># files (the "Software"), to deal in the Software without           #</tt> </tt>
+<a name="L8"></a><tt class="py-lineno">  8</tt>  <tt class="py-line"><tt class="py-comment"># restriction, including without limitation the rights to use,      #</tt> </tt>
+<a name="L9"></a><tt class="py-lineno">  9</tt>  <tt class="py-line"><tt class="py-comment"># copy, modify, merge, publish, distribute, sublicense, and/or sell #</tt> </tt>
+<a name="L10"></a><tt class="py-lineno"> 10</tt>  <tt class="py-line"><tt class="py-comment"># copies of the Software, and to permit persons to whom the         #</tt> </tt>
+<a name="L11"></a><tt class="py-lineno"> 11</tt>  <tt class="py-line"><tt class="py-comment"># Software is furnished to do so, subject to the following          #</tt> </tt>
+<a name="L12"></a><tt class="py-lineno"> 12</tt>  <tt class="py-line"><tt class="py-comment"># conditions:                                                       #</tt> </tt>
+<a name="L13"></a><tt class="py-lineno"> 13</tt>  <tt class="py-line"><tt class="py-comment">#                                                                   #</tt> </tt>
+<a name="L14"></a><tt class="py-lineno"> 14</tt>  <tt class="py-line"><tt class="py-comment"># The above copyright notice and this permission notice shall be    #</tt> </tt>
+<a name="L15"></a><tt class="py-lineno"> 15</tt>  <tt class="py-line"><tt class="py-comment"># included in all copies or substantial portions of the Software.   #</tt> </tt>
+<a name="L16"></a><tt class="py-lineno"> 16</tt>  <tt class="py-line"><tt class="py-comment">#                                                                   #</tt> </tt>
+<a name="L17"></a><tt class="py-lineno"> 17</tt>  <tt class="py-line"><tt class="py-comment"># THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,   #</tt> </tt>
+<a name="L18"></a><tt class="py-lineno"> 18</tt>  <tt class="py-line"><tt class="py-comment"># EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES   #</tt> </tt>
+<a name="L19"></a><tt class="py-lineno"> 19</tt>  <tt class="py-line"><tt class="py-comment"># OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND          #</tt> </tt>
+<a name="L20"></a><tt class="py-lineno"> 20</tt>  <tt class="py-line"><tt class="py-comment"># NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT       #</tt> </tt>
+<a name="L21"></a><tt class="py-lineno"> 21</tt>  <tt class="py-line"><tt class="py-comment"># HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,      #</tt> </tt>
+<a name="L22"></a><tt class="py-lineno"> 22</tt>  <tt class="py-line"><tt class="py-comment"># WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING      #</tt> </tt>
+<a name="L23"></a><tt class="py-lineno"> 23</tt>  <tt class="py-line"><tt class="py-comment"># FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR     #</tt> </tt>
+<a name="L24"></a><tt class="py-lineno"> 24</tt>  <tt class="py-line"><tt class="py-comment"># OTHER DEALINGS IN THE SOFTWARE.                                   #</tt> </tt>
+<a name="L25"></a><tt class="py-lineno"> 25</tt>  <tt class="py-line"><tt class="py-comment">#####################################################################</tt> </tt>
+<a name="L26"></a><tt class="py-lineno"> 26</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt class="py-name">xml</tt><tt class="py-op">.</tt><tt class="py-name">dom</tt> <tt class="py-keyword">import</tt> <tt class="py-name">minidom</tt> </tt>
+<a name="XMLBuilder"></a><div id="XMLBuilder-def"><a name="L27"></a><tt class="py-lineno"> 27</tt>  <tt class="py-line"> </tt>
+<a name="L28"></a><tt class="py-lineno"> 28</tt> <a class="py-toggle" href="#" id="XMLBuilder-toggle" onclick="return toggle('XMLBuilder');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="gittigidiyor.xmlbuilder.XMLBuilder-class.html">XMLBuilder</a><tt class="py-op">(</tt><tt class="py-base-class">minidom</tt><tt class="py-op">.</tt><tt class="py-base-class">Document</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="XMLBuilder-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="XMLBuilder-expanded"><a name="L29"></a><tt class="py-lineno"> 29</tt>  <tt class="py-line">    <tt class="py-docstring">"""</tt> </tt>
+<a name="L30"></a><tt class="py-lineno"> 30</tt>  <tt class="py-line"><tt class="py-docstring">    This class intends to wrap around the Document class which is inside the minidom library,</tt> </tt>
+<a name="L31"></a><tt class="py-lineno"> 31</tt>  <tt class="py-line"><tt class="py-docstring">    and provides some utility functions to build up XML document easily.</tt> </tt>
+<a name="L32"></a><tt class="py-lineno"> 32</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
+<a name="XMLBuilder.__init__"></a><div id="XMLBuilder.__init__-def"><a name="L33"></a><tt class="py-lineno"> 33</tt> <a class="py-toggle" href="#" id="XMLBuilder.__init__-toggle" onclick="return toggle('XMLBuilder.__init__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="gittigidiyor.xmlbuilder.XMLBuilder-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">tag</tt> <tt class="py-op">=</tt> <tt class="py-string">"request"</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="XMLBuilder.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="XMLBuilder.__init__-expanded"><a name="L34"></a><tt class="py-lineno"> 34</tt>  <tt class="py-line">        <tt class="py-name">minidom</tt><tt class="py-op">.</tt><tt class="py-name">Document</tt><tt class="py-op">.</tt><tt id="link-0" class="py-name" targets="Method gittigidiyor.applicationservice.ApplicationService.__init__()=gittigidiyor.applicationservice.ApplicationService-class.html#__init__,Method gittigidiyor.auth.Auth.__init__()=gittigidiyor.auth.Auth-class.html#__init__,Method gittigidiyor.authenticationservice.AuthenticationService.__init__()=gittigidiyor.authenticationservice.AuthenticationService-class.html#__init__,Method gittigidiyor.cargoservice.CargoService.__init__()=gittigidiyor.cargoservice.CargoService-class.html#__init__,Method gittigidiyor.categoryservice.CategoryService.__init__()=gittigidiyor.categoryservice.CategoryService-class.html#__init__,Method gittigidiyor.cityservice.CityService.__init__()=gittigidiyor.cityservice.CityService-class.html#__init__,Method gittigidiyor.developerservice.DeveloperService.__init__()=gittigidiyor.developerservice.DeveloperService-class.html#__init__,Method gittigidiyor.productservice.ProductService.__init__()=gittigidiyor.productservice.ProductService-class.html#__init__,Method gittigidiyor.provider.ProviderInterface.__init__()=gittigidiyor.provider.ProviderInterface-class.html#__init__,Method gittigidiyor.saleservice.SaleService.__init__()=gittigidiyor.saleservice.SaleService-class.html#__init__,Method gittigidiyor.service.Service.__init__()=gittigidiyor.service.Service-class.html#__init__,Method gittigidiyor.usermessageservice.UserMessagesService.__init__()=gittigidiyor.usermessageservice.UserMessagesService-class.html#__init__,Method gittigidiyor.xmlbuilder.XMLBuilder.__init__()=gittigidiyor.xmlbuilder.XMLBuilder-class.html#__init__"><a title="gittigidiyor.applicationservice.ApplicationService.__init__
+gittigidiyor.auth.Auth.__init__
+gittigidiyor.authenticationservice.AuthenticationService.__init__
+gittigidiyor.cargoservice.CargoService.__init__
+gittigidiyor.categoryservice.CategoryService.__init__
+gittigidiyor.cityservice.CityService.__init__
+gittigidiyor.developerservice.DeveloperService.__init__
+gittigidiyor.productservice.ProductService.__init__
+gittigidiyor.provider.ProviderInterface.__init__
+gittigidiyor.saleservice.SaleService.__init__
+gittigidiyor.service.Service.__init__
+gittigidiyor.usermessageservice.UserMessagesService.__init__
+gittigidiyor.xmlbuilder.XMLBuilder.__init__" class="py-name" href="#" onclick="return doclink('link-0', '__init__', 'link-0');">__init__</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">)</tt> </tt>
+<a name="L35"></a><tt class="py-lineno"> 35</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">rootElement</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">createElement</tt><tt class="py-op">(</tt><tt class="py-name">tag</tt><tt class="py-op">)</tt> </tt>
+<a name="L36"></a><tt class="py-lineno"> 36</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">appendChild</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">rootElement</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L37"></a><tt class="py-lineno"> 37</tt>  <tt class="py-line"> </tt>
+<a name="XMLBuilder.root"></a><div id="XMLBuilder.root-def"><a name="L38"></a><tt class="py-lineno"> 38</tt> <a class="py-toggle" href="#" id="XMLBuilder.root-toggle" onclick="return toggle('XMLBuilder.root');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="gittigidiyor.xmlbuilder.XMLBuilder-class.html#root">root</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="XMLBuilder.root-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="XMLBuilder.root-expanded"><a name="L39"></a><tt class="py-lineno"> 39</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L40"></a><tt class="py-lineno"> 40</tt>  <tt class="py-line"><tt class="py-docstring">        Gets the root element which is at the top of Dom hierarchy.</tt> </tt>
+<a name="L41"></a><tt class="py-lineno"> 41</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L42"></a><tt class="py-lineno"> 42</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">rootElement</tt> </tt>
+</div><a name="L43"></a><tt class="py-lineno"> 43</tt>  <tt class="py-line"> </tt>
+<a name="XMLBuilder.createElementWithTextNode"></a><div id="XMLBuilder.createElementWithTextNode-def"><a name="L44"></a><tt class="py-lineno"> 44</tt> <a class="py-toggle" href="#" id="XMLBuilder.createElementWithTextNode-toggle" onclick="return toggle('XMLBuilder.createElementWithTextNode');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="gittigidiyor.xmlbuilder.XMLBuilder-class.html#createElementWithTextNode">createElementWithTextNode</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">tagName</tt><tt class="py-op">,</tt> <tt class="py-param">nodeValue</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="XMLBuilder.createElementWithTextNode-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="XMLBuilder.createElementWithTextNode-expanded"><a name="L45"></a><tt class="py-lineno"> 45</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L46"></a><tt class="py-lineno"> 46</tt>  <tt class="py-line"><tt class="py-docstring">        Creates a dom element with the given tag name and the node value.</tt> </tt>
+<a name="L47"></a><tt class="py-lineno"> 47</tt>  <tt class="py-line"><tt class="py-docstring">        </tt> </tt>
+<a name="L48"></a><tt class="py-lineno"> 48</tt>  <tt class="py-line"><tt class="py-docstring">        input: string, string</tt> </tt>
+<a name="L49"></a><tt class="py-lineno"> 49</tt>  <tt class="py-line"><tt class="py-docstring">        </tt> </tt>
+<a name="L50"></a><tt class="py-lineno"> 50</tt>  <tt class="py-line"><tt class="py-docstring">        output: DOM Element</tt> </tt>
+<a name="L51"></a><tt class="py-lineno"> 51</tt>  <tt class="py-line"><tt class="py-docstring">        </tt> </tt>
+<a name="L52"></a><tt class="py-lineno"> 52</tt>  <tt class="py-line"><tt class="py-docstring">        Example: element = self.createElementWithTextNode('rate', '5')</tt> </tt>
+<a name="L53"></a><tt class="py-lineno"> 53</tt>  <tt class="py-line"><tt class="py-docstring">        </tt> </tt>
+<a name="L54"></a><tt class="py-lineno"> 54</tt>  <tt class="py-line"><tt class="py-docstring">        print element.toxml()</tt> </tt>
+<a name="L55"></a><tt class="py-lineno"> 55</tt>  <tt class="py-line"><tt class="py-docstring">        </tt> </tt>
+<a name="L56"></a><tt class="py-lineno"> 56</tt>  <tt class="py-line"><tt class="py-docstring">        '&lt;rate&gt;5&lt;/rate&gt;'</tt> </tt>
+<a name="L57"></a><tt class="py-lineno"> 57</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L58"></a><tt class="py-lineno"> 58</tt>  <tt class="py-line">        <tt class="py-name">nodeValue</tt> <tt class="py-op">=</tt> <tt class="py-name">True</tt> <tt class="py-keyword">and</tt> <tt class="py-name">nodeValue</tt> <tt class="py-keyword">or</tt> <tt class="py-string">""</tt> </tt>
+<a name="L59"></a><tt class="py-lineno"> 59</tt>  <tt class="py-line">        <tt class="py-name">element</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">createElement</tt><tt class="py-op">(</tt><tt class="py-name">str</tt><tt class="py-op">(</tt><tt class="py-name">tagName</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L60"></a><tt class="py-lineno"> 60</tt>  <tt class="py-line">        <tt class="py-name">node</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">createTextNode</tt><tt class="py-op">(</tt><tt class="py-name">str</tt><tt class="py-op">(</tt><tt class="py-name">nodeValue</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L61"></a><tt class="py-lineno"> 61</tt>  <tt class="py-line">        <tt class="py-name">element</tt><tt class="py-op">.</tt><tt class="py-name">appendChild</tt><tt class="py-op">(</tt><tt class="py-name">node</tt><tt class="py-op">)</tt> </tt>
+<a name="L62"></a><tt class="py-lineno"> 62</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">element</tt> </tt>
+</div><a name="L63"></a><tt class="py-lineno"> 63</tt>  <tt class="py-line"> </tt>
+<a name="XMLBuilder.createElementsWithTextNodes"></a><div id="XMLBuilder.createElementsWithTextNodes-def"><a name="L64"></a><tt class="py-lineno"> 64</tt> <a class="py-toggle" href="#" id="XMLBuilder.createElementsWithTextNodes-toggle" onclick="return toggle('XMLBuilder.createElementsWithTextNodes');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="gittigidiyor.xmlbuilder.XMLBuilder-class.html#createElementsWithTextNodes">createElementsWithTextNodes</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-op">**</tt><tt class="py-param">kwargs</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="XMLBuilder.createElementsWithTextNodes-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="XMLBuilder.createElementsWithTextNodes-expanded"><a name="L65"></a><tt class="py-lineno"> 65</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L66"></a><tt class="py-lineno"> 66</tt>  <tt class="py-line"><tt class="py-docstring">        Creates a list of DOM Element instances with the given unlimited parameters.</tt> </tt>
+<a name="L67"></a><tt class="py-lineno"> 67</tt>  <tt class="py-line"><tt class="py-docstring">        </tt> </tt>
+<a name="L68"></a><tt class="py-lineno"> 68</tt>  <tt class="py-line"><tt class="py-docstring">        input: string, string ...</tt> </tt>
+<a name="L69"></a><tt class="py-lineno"> 69</tt>  <tt class="py-line"><tt class="py-docstring">        </tt> </tt>
+<a name="L70"></a><tt class="py-lineno"> 70</tt>  <tt class="py-line"><tt class="py-docstring">        output: [DOM Element, DOM Element, ...]</tt> </tt>
+<a name="L71"></a><tt class="py-lineno"> 71</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L72"></a><tt class="py-lineno"> 72</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-op">[</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-1" class="py-name" targets="Method gittigidiyor.xmlbuilder.XMLBuilder.createElementWithTextNode()=gittigidiyor.xmlbuilder.XMLBuilder-class.html#createElementWithTextNode"><a title="gittigidiyor.xmlbuilder.XMLBuilder.createElementWithTextNode" class="py-name" href="#" onclick="return doclink('link-1', 'createElementWithTextNode', 'link-1');">createElementWithTextNode</a></tt><tt class="py-op">(</tt><tt class="py-name">k</tt><tt class="py-op">,</tt> <tt class="py-name">v</tt><tt class="py-op">)</tt> <tt class="py-keyword">for</tt> <tt class="py-name">k</tt><tt class="py-op">,</tt> <tt class="py-name">v</tt> <tt class="py-keyword">in</tt> <tt class="py-name">kwargs</tt><tt class="py-op">.</tt><tt class="py-name">items</tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">]</tt> </tt>
+</div><a name="L73"></a><tt class="py-lineno"> 73</tt>  <tt class="py-line"> </tt>
+<a name="XMLBuilder.appendListOfElementsToElement"></a><div id="XMLBuilder.appendListOfElementsToElement-def"><a name="L74"></a><tt class="py-lineno"> 74</tt> <a class="py-toggle" href="#" id="XMLBuilder.appendListOfElementsToElement-toggle" onclick="return toggle('XMLBuilder.appendListOfElementsToElement');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="gittigidiyor.xmlbuilder.XMLBuilder-class.html#appendListOfElementsToElement">appendListOfElementsToElement</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">element</tt><tt class="py-op">,</tt> <tt class="py-param">elements</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="XMLBuilder.appendListOfElementsToElement-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="XMLBuilder.appendListOfElementsToElement-expanded"><a name="L75"></a><tt class="py-lineno"> 75</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L76"></a><tt class="py-lineno"> 76</tt>  <tt class="py-line"><tt class="py-docstring">        Appends list of DOM elements to the given DOM element as a child.</tt> </tt>
+<a name="L77"></a><tt class="py-lineno"> 77</tt>  <tt class="py-line"><tt class="py-docstring">        </tt> </tt>
+<a name="L78"></a><tt class="py-lineno"> 78</tt>  <tt class="py-line"><tt class="py-docstring">        input: DOM Element, [DOM Element, DOM Element, ...]</tt> </tt>
+<a name="L79"></a><tt class="py-lineno"> 79</tt>  <tt class="py-line"><tt class="py-docstring">        </tt> </tt>
+<a name="L80"></a><tt class="py-lineno"> 80</tt>  <tt class="py-line"><tt class="py-docstring">        output: NULL</tt> </tt>
+<a name="L81"></a><tt class="py-lineno"> 81</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L82"></a><tt class="py-lineno"> 82</tt>  <tt class="py-line">        <tt class="py-keyword">for</tt> <tt class="py-name">ele</tt> <tt class="py-keyword">in</tt> <tt class="py-name">elements</tt><tt class="py-op">:</tt> </tt>
+<a name="L83"></a><tt class="py-lineno"> 83</tt>  <tt class="py-line">            <tt class="py-name">element</tt><tt class="py-op">.</tt><tt class="py-name">appendChild</tt><tt class="py-op">(</tt><tt class="py-name">ele</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L84"></a><tt class="py-lineno"> 84</tt>  <tt class="py-line"> </tt>
+<a name="XMLBuilder.__unicode__"></a><div id="XMLBuilder.__unicode__-def"><a name="L85"></a><tt class="py-lineno"> 85</tt> <a class="py-toggle" href="#" id="XMLBuilder.__unicode__-toggle" onclick="return toggle('XMLBuilder.__unicode__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="gittigidiyor.xmlbuilder.XMLBuilder-class.html#__unicode__">__unicode__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="XMLBuilder.__unicode__-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="XMLBuilder.__unicode__-expanded"><a name="L86"></a><tt class="py-lineno"> 86</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">toxml</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L87"></a><tt class="py-lineno"> 87</tt>  <tt class="py-line">     </tt>
+<a name="L88"></a><tt class="py-lineno"> 88</tt>  <tt class="py-line">    <tt class="py-decorator">@</tt><tt class="py-decorator">staticmethod</tt> </tt>
+<a name="XMLBuilder.get_data"></a><div id="XMLBuilder.get_data-def"><a name="L89"></a><tt class="py-lineno"> 89</tt> <a class="py-toggle" href="#" id="XMLBuilder.get_data-toggle" onclick="return toggle('XMLBuilder.get_data');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="gittigidiyor.xmlbuilder.XMLBuilder-class.html#get_data">get_data</a><tt class="py-op">(</tt><tt class="py-param">xml</tt><tt class="py-op">,</tt> <tt class="py-param">s</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="XMLBuilder.get_data-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="XMLBuilder.get_data-expanded"><a name="L90"></a><tt class="py-lineno"> 90</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L91"></a><tt class="py-lineno"> 91</tt>  <tt class="py-line"><tt class="py-docstring">        Static method for traversing and getting the text value for</tt> </tt>
+<a name="L92"></a><tt class="py-lineno"> 92</tt>  <tt class="py-line"><tt class="py-docstring">        the given tag name 's' inside the DOM tree 'xml'..</tt> </tt>
+<a name="L93"></a><tt class="py-lineno"> 93</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L94"></a><tt class="py-lineno"> 94</tt>  <tt class="py-line">        <tt class="py-keyword">try</tt><tt class="py-op">:</tt> </tt>
+<a name="L95"></a><tt class="py-lineno"> 95</tt>  <tt class="py-line">            <tt class="py-name">document</tt> <tt class="py-op">=</tt> <tt class="py-name">minidom</tt><tt class="py-op">.</tt><tt class="py-name">parseString</tt><tt class="py-op">(</tt><tt class="py-name">str</tt><tt class="py-op">(</tt><tt class="py-name">xml</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L96"></a><tt class="py-lineno"> 96</tt>  <tt class="py-line">            <tt class="py-name">a</tt> <tt class="py-op">=</tt> <tt class="py-name">document</tt><tt class="py-op">.</tt><tt class="py-name">getElementsByTagName</tt><tt class="py-op">(</tt><tt class="py-name">s</tt><tt class="py-op">)</tt><tt class="py-op">[</tt><tt class="py-number">0</tt><tt class="py-op">]</tt> </tt>
+<a name="L97"></a><tt class="py-lineno"> 97</tt>  <tt class="py-line">            <tt class="py-keyword">return</tt> <tt class="py-name">a</tt><tt class="py-op">.</tt><tt class="py-name">childNodes</tt><tt class="py-op">[</tt><tt class="py-number">0</tt><tt class="py-op">]</tt><tt class="py-op">.</tt><tt class="py-name">data</tt> </tt>
+<a name="L98"></a><tt class="py-lineno"> 98</tt>  <tt class="py-line">        <tt class="py-keyword">except</tt><tt class="py-op">:</tt> </tt>
+<a name="L99"></a><tt class="py-lineno"> 99</tt>  <tt class="py-line">            <tt class="py-keyword">return</tt> <tt class="py-string">""</tt> </tt>
+</div></div><a name="L100"></a><tt class="py-lineno">100</tt>  <tt class="py-line"> </tt><script type="text/javascript">
+<!--
+expandto(location.href);
+// -->
+</script>
+</pre>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="gittigidiyor-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://dev.gittigidiyor.com">GittiGidiyor Python RESTLIKE API</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Mon Jul  5 19:36:30 2010
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>
